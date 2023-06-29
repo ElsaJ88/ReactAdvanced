@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ignacio Doe",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Bennett",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Elsa Jansen",
+      "image": "https://hips.hearstapps.com/cnl.h.cdn.cosmopolitan.nl/assets/17/13/768x671/gallery-1490947478-nrm-1419525887-wauw-deze-trouwjurk-gebaseerd-op-frozen-moet-je-zien.jpg"
+    }
+  ],
+  "events": [
+    {
+      "createdBy": 2,
+      "title": "Trampoline Party",
+      "description": "Bounce around with your friends.",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "categoryIds": [
+        1
+      ],
+      "attendedBy": [
+        1
+      ],
+      "location": "My back yard",
+      "startTime": "2023-03-10T18:00",
+      "endTime": "2023-03-10T21:02",
+      "id": 1
+    },
+    {
+      "createdBy": 2,
+      "title": "Laser Tag mania",
+      "description": "Let's play laser tag!!!",
+      "image": "https://www.ctvnews.ca/polopoly_fs/1.5118552.1600965663!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg",
+      "categoryIds": [
+        2
+      ],
+      "attendedBy": [
+        2
+      ],
+      "location": "Blinded by the Lights Laser Tag, 15 Main St.",
+      "startTime": "2023-04-06T18:46",
+      "endTime": "2023-04-21T17:46",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "createdBy": 2,
+      "title": "Badminton game",
+      "description": "Hit that shuttle!",
+      "image": "https://s3.eu-west-2.amazonaws.com/ws-activestirling/production/Badminton/_1200x630_crop_center-center_none/Badminton-3.jpg",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "attendedBy": [
+        1,
+        2
+      ],
+      "location": "The Park",
+      "startTime": "2023-03-15T12:00:00.000Z",
+      "endTime": "2023-03-15T13:30:00.000Z"
+    },
+    {
+      "createdBy": 2,
+      "title": "Yoga",
+      "description": "It's a bit of a stretch.",
+      "image": "https://ymcasouthflorida.org/wp-content/uploads/2019/12/AA2I8910-scaled.jpg",
+      "categoryIds": [
+        1
+      ],
+      "attendedBy": [],
+      "location": "Shavasana Yoga School",
+      "startTime": "2023-06-07T20:03",
+      "endTime": "2023-06-23T20:03",
+      "id": 4
+    },
+    {
+      "createdBy": 3,
+      "title": "Azul Toernooi",
+      "description": "Toernooi",
+      "image": "https://media.s-bol.com/0DK0GQl4RjZX/g2YgZ/1200x911.jpg",
+      "categoryIds": [
+        2
+      ],
+      "attendedBy": [],
+      "location": "Aahoes",
+      "startTime": "2023-07-01T20:00",
+      "endTime": "2023-07-01T23:00",
+      "id": 11
+    },
+    {
+      "createdBy": 3,
+      "title": "Splendor Toernooi",
+      "description": "Toernooi",
+      "image": "https://media.s-bol.com/xGj4pEZ2NZ9z/1200x1064.jpg",
+      "categoryIds": [
+        2
+      ],
+      "attendedBy": [],
+      "location": "T' Aahoes",
+      "startTime": "2023-06-01T20:12",
+      "endTime": "2023-06-01T22:12",
+      "id": 12
+    },
+    {
+      "createdBy": 1,
+      "title": "Golf Toernooi",
+      "description": "Golf Toernooi",
+      "image": "https://www.americanchiro.nl/wp-content/uploads/2020/03/Golf-Chiropractie.jpg",
+      "categoryIds": [
+        1,
+        2
+      ],
+      "attendedBy": [],
+      "location": "Sybrook",
+      "startTime": "2023-06-12T10:00",
+      "endTime": "2023-06-12T15:00",
+      "id": 15
+    },
+    {
+      "createdBy": 2,
+      "title": "Ukelele Festival",
+      "description": "",
+      "image": "https://www.musikalessons.com/blog/wp-content/uploads/2017/08/shutterstock_680880085.jpg",
+      "categoryIds": [
+        5
+      ],
+      "attendedBy": [],
+      "location": "",
+      "startTime": "2023-07-08T12:50",
+      "endTime": "2023-07-09T20:49",
+      "id": 18
+    },
+    {
+      "createdBy": 3,
+      "title": "Sushi Workshop",
+      "description": "Learn to make your own sushi!",
+      "image": "https://nieuwegein.sushistation.nl/nieuwegein.sushistation.nl/img/61cc5caf35405_templatePhoto.png",
+      "categoryIds": [
+        4
+      ],
+      "attendedBy": [],
+      "location": "Restaurant Unagi",
+      "startTime": "2023-07-08T15:30",
+      "endTime": "2023-07-08T19:15",
+      "id": 19
+    },
+    {
+      "createdBy": 3,
+      "title": "Paint workshop",
+      "description": "Make your own masterpiece!",
+      "image": "https://artfulparent.com/wp-content/uploads/2016/06/painting-ideas-featured-1.png",
+      "categoryIds": [
+        3
+      ],
+      "attendedBy": [],
+      "location": "Picassostreet 20",
+      "startTime": "2023-07-08T16:30",
+      "endTime": "2023-07-08T18:30",
+      "id": 20
+    },
+    {
+      "createdBy": 3,
+      "title": "Museum Tour",
+      "description": "",
+      "image": "https://assets3.thrillist.com/v1/image/2865031/1584x1056/crop;jpeg_quality=60;progressive.jpg",
+      "categoryIds": [
+        3
+      ],
+      "attendedBy": [],
+      "location": "Amsterdam",
+      "startTime": "2023-06-29T14:40",
+      "endTime": "2023-06-29T16:40",
+      "id": 21
+    },
+    {
+      "createdBy": 3,
+      "title": "Party!",
+      "description": "",
+      "image": "https://media.npr.org/assets/img/2022/11/04/gettyimages-1183414292-1-_slide-edff8c3fe6afcab5c6457e3c7bd011f5c1745161.jpg",
+      "categoryIds": [
+        5
+      ],
+      "attendedBy": [],
+      "location": "Rozenbottel",
+      "startTime": "2023-07-02T19:20",
+      "endTime": "2023-07-02T23:30",
+      "id": 39
+    }
+  ],
+  "categories": [
+    {
+      "name": "sports",
+      "id": 1
+    },
+    {
+      "name": "games",
+      "id": 2
+    },
+    {
+      "name": "art",
+      "id": 3
+    },
+    {
+      "name": "food",
+      "id": 4
+    },
+    {
+      "name": "music",
+      "id": 5
+    }
+  ]
+}
