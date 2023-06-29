@@ -30,7 +30,6 @@ export const EventPage = () => {
   const { event } = useLoaderData();
   const { users } = useContext(EventContext);
   const [currentEvent, setCurrentEvent] = useState(event);
-  console.log(currentEvent);
 
   const textStyling = {
     color: "gray.600",

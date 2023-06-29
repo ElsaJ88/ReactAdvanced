@@ -31,7 +31,6 @@ export const AddEvent = () => {
   const [endTime, setEndTime] = useState("");
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  console.log(isSubmitted);
 
   const formData = {
     createdBy: createdBy,
@@ -72,7 +71,7 @@ export const AddEvent = () => {
     }
     const json = await response.json();
     const newId = await json.id;
-    console.log(newId);
+
     if (response.status === 201) {
       setTimeout(() => window.location.replace(`/event/${newId}`), 3000);
     } else {

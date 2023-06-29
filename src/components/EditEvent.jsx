@@ -50,8 +50,6 @@ export const EditEvent = ({ event, setCurrEvent }) => {
   const handleSubmit = async () => {
     onCloseAlert();
 
-    console.log(createdBy);
-
     const formData = {
       createdBy: createdBy,
       title: title,
