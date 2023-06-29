@@ -161,7 +161,7 @@ export const EditEvent = ({ event, setCurrEvent }) => {
               />
             </FormControl>
 
-            <FormControl>
+            <FormControl isRequired>
               <FormLabel htmlFor="image">Image Url:</FormLabel>
               <Input
                 type="url"

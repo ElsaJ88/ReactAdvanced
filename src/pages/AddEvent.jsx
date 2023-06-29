@@ -9,6 +9,7 @@ import {
   Checkbox,
   Button,
   Flex,
+  CheckboxGroup,
 } from "@chakra-ui/react";
 
 import { EventContext } from "../Contexts";
@@ -105,7 +106,7 @@ export const AddEvent = () => {
       </Heading>
 
       <form onSubmit={handleSubmit}>
-        <Flex m={10} flexDir="column" gap={2} w="80vw">
+        <Flex m={5} flexDir="column" gap={2} w="90vw">
           <FormControl isRequired>
             <FormLabel htmlFor="user" isRequired>
               User:
@@ -159,7 +160,7 @@ export const AddEvent = () => {
             />
           </FormControl>
 
-          <FormControl>
+          <FormControl isRequired>
             <FormLabel htmlFor="image">Image Url:</FormLabel>
             <Input
               bg="gray.50"
@@ -218,7 +219,7 @@ export const AddEvent = () => {
             {isSubmitted ? (
               <Button isLoading />
             ) : (
-              <Button colorScheme="pink" type="submit" ml={3}>
+              <Button colorScheme="pink" type="submit">
                 Submit
               </Button>
             )}
