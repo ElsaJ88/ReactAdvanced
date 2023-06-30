@@ -9,7 +9,6 @@ import {
   Checkbox,
   Button,
   Flex,
-  CheckboxGroup,
 } from "@chakra-ui/react";
 
 import { EventContext } from "../Contexts";

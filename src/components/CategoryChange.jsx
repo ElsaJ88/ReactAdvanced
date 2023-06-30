@@ -7,10 +7,8 @@ export const CategoryChange = ({ onChange }) => {
 
   return (
     <RadioGroup defaultValue={0} value={categoryFilter}>
-      {/* <Flex gap={1} flexDir={{ base: "column", md: "row" }}> */}
-
       <SimpleGrid columns={{ base: 3, md: 6 }} m={2}>
-        <Radio value={0} onChange={() => onChange(0)} bg={"gray.50"}>
+        <Radio value={0} onChange={() => onChange(0)} bg={"gray.50"} px={1}>
           All
         </Radio>
         {categories.map((cat) => (
@@ -19,12 +17,12 @@ export const CategoryChange = ({ onChange }) => {
             value={cat.id}
             onClick={() => onChange(cat.id)}
             bg={"gray.50"}
+            px={1}
           >
             <Text textTransform="capitalize">{cat.name}</Text>
           </Radio>
         ))}
       </SimpleGrid>
-      {/* </Flex> */}
     </RadioGroup>
   );
 };
