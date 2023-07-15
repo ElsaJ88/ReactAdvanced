@@ -6,8 +6,12 @@ import { Box } from "@chakra-ui/react";
 import { EventContext } from "../Contexts";
 
 export const loader = async () => {
-  const categories = await fetch("http://localhost:3000/categories/");
-  const users = await fetch("http://localhost:3000/users/");
+  const categories = await fetch(
+    "https://my-json-server.typicode.com/ElsaJ88/ReactAdvanced/categories"
+  );
+  const users = await fetch(
+    "https://my-json-server.typicode.com/ElsaJ88/ReactAdvanced/users"
+  );
   return {
     categories: await categories.json(),
     users: await users.json(),

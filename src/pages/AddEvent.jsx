@@ -46,32 +46,44 @@ export const AddEvent = () => {
   const handleSubmit = async (e) => {
     setIsSubmitted(true);
     e.preventDefault();
-    const response = await fetch("http://localhost:3000/events", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" },
+    const response = await fetch(
+      "https://my-json-server.typicode.com/ElsaJ88/ReactAdvanced/events",
+      {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" },
+      }
+    );
+
+    toast({
+      title: "Currently no adding and editing is allowed.",
+      description: "",
+      status: "warning",
+      isClosable: false,
+      duration: 3000,
     });
 
-    if (response.status === 201) {
+    if (response.status === null) {
       toast({
         title: "Succesfully Submitted",
         description: "",
-        status: "success",
+        status: "succes",
         isClosable: false,
         duration: 3000,
       });
-    } else {
-      toast({
-        title: "Something went wrong",
-        description: "Please try again.",
-        status: "warning",
-        isClosable: true,
-      });
     }
+    // else {
+    //   toast({
+    //     title: "Something went wrong",
+    //     description: "Please try again.",
+    //     status: "warning",
+    //     isClosable: true,
+    //   });
+    // }
     const json = await response.json();
     const newId = await json.id;
 
-    if (response.status === 201) {
+    if (response.status === null) {
       setTimeout(() => window.location.replace(`/event/${newId}`), 3000);
     } else {
       setIsSubmitted(false);

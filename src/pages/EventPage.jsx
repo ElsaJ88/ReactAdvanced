@@ -20,7 +20,9 @@ import { EventDate } from "../components/EventDate";
 import { Categories } from "../components/Categories";
 
 export const loader = async ({ params }) => {
-  const event = await fetch(`http://localhost:3000/events/${params.eventId}`);
+  const event = await fetch(
+    `https://my-json-server.typicode.com/ElsaJ88/ReactAdvanced/events/${params.eventId}`
+  );
   return {
     event: await event.json(),
   };
