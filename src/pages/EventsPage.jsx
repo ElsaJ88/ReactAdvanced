@@ -18,6 +18,24 @@ import { CategoryChange } from "../components/CategoryChange";
 import { EventDate } from "../components/EventDate";
 import { Categories } from "../components/Categories";
 
+// export const loader = async () => {
+//   const fetchedEvents = await fetch(
+//     `https://api.jsonbin.io/v3/b/64e11b21b89b1e2299d33293`,
+//     {
+//       headers: {
+//         "Content-Type": "application/json",
+//         "X-Access-Key":
+//           "$2b$10$9IE7NWK25rHLnMbcLhh.3ecFmXorRt37y5.eAOdS9fJr6UsH8Izy2",
+//       },
+//     }
+//   );
+//   const events = await fetchedEvents.json();
+//   console.log(events.record);
+//   return {
+//     events: await events.record,
+//   };
+// };
+
 export const loader = async () => {
   const events = await fetch(
     `https://my-json-server.typicode.com/ElsaJ88/ReactAdvanced/events/`
@@ -78,7 +96,13 @@ export const EventsPage = () => {
           bg="gray.50"
         />
         <CategoryChange onChange={handleCategoryChange} />
-      </Flex>
+      </Flex>{" "}
+      <Center pt={4}>
+        <Text>
+          Currently for display purpose only, no adding and editing is allowed
+          at this moment.
+        </Text>
+      </Center>
       <Flex
         mt={10}
         justify="space-evenly"

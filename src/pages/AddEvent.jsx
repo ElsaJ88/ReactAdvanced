@@ -9,6 +9,8 @@ import {
   Checkbox,
   Button,
   Flex,
+  Text,
+  Center,
 } from "@chakra-ui/react";
 
 import { EventContext } from "../Contexts";
@@ -114,6 +116,12 @@ export const AddEvent = () => {
       >
         Add a new event
       </Heading>
+      <Center pt={4} color={""}>
+        <Text>
+          Currently for display purpose only, no adding and editing is allowed
+          at this moment.
+        </Text>
+      </Center>
 
       <form onSubmit={handleSubmit}>
         <Flex m={5} flexDir="column" gap={2} w="90vw">

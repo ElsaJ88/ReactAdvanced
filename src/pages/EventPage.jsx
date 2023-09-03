@@ -12,6 +12,7 @@ import {
   GridItem,
   Box,
   Flex,
+  Center,
 } from "@chakra-ui/react";
 
 import { EditEvent } from "../components/EditEvent";
@@ -54,6 +55,12 @@ export const EventPage = () => {
       >
         {currentEvent.title}
       </Heading>
+      <Center pt={4}>
+        <Text>
+          Currently for display purpose only, no adding and editing is allowed
+          at this moment.
+        </Text>
+      </Center>
       <Grid
         justifyContent={"start"}
         templateColumns={"repeat(5, auto)"}
